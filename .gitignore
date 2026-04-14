@@ -1,0 +1,30 @@
+# Credenciales — NUNCA subir esto
+.env
+*.json
+credentials/
+*service_account*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# dbt
+transforms/target/
+transforms/dbt_packages/
+transforms/logs/
+
+# Airflow
+logs/
+airflow.db
+airflow.cfg
+
+# Data local
+data/raw/
+data/processed/
+
+# OS
+.DS_Store
+Thumbs.db
