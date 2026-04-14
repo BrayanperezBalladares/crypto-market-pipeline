@@ -12,7 +12,7 @@ _Diagram coming in Week 3_
 CoinGecko API → Airflow DAG → GCS (raw) → BigQuery → dbt → Looker Studio
 
 ## Stack
-| Layer | Tool |
+| Layer | Tool | Notes |
 |---|---|
 | Orchestration | Apache Airflow 2.9 |
 | Raw storage | Google Cloud Storage |
@@ -20,6 +20,11 @@ CoinGecko API → Airflow DAG → GCS (raw) → BigQuery → dbt → Looker Stud
 | Transformation | dbt Core |
 | Visualization | Looker Studio |
 | Language | Python 3.11 |
+
+
+> **Note:** Project is architected for GCP (BigQuery + GCS). Current setup uses
+> local alternatives (DuckDB + Supabase Storage) during development. Migration
+> requires only configuration changes — no logic changes.
 
 ## Project structure
 crypto-market-pipeline/
